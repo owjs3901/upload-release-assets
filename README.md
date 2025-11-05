@@ -1,4 +1,4 @@
-# Upload a Release Asset
+# Upload github release assets
 
 A GitHub Action to upload assets to an existing release in your repository.
 

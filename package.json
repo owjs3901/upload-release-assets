@@ -1,5 +1,5 @@
 {
-	"name": "upload-release-assets",
+	"name": "upload-github-release-assets",
 	"version": "0.1.0",
 	"description": "Upload release assets to an existing release in your repository",
 	"author": "JeongMin Oh",

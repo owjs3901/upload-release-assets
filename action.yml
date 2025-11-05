@@ -1,4 +1,4 @@
-name: Upload Release Assets
+name: Upload github release Assets
 description: 'Upload release assets to an existing release in your repository'
 author: 'owjs3901'
 inputs:
