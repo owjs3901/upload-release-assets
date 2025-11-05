@@ -1,12 +1,12 @@
 name: Upload github release Asset
-description: 'Upload a release asset to an existing release in your repository'
+description: 'Upload release assets to an existing release in your repository'
 author: 'owjs3901'
 inputs:
   upload_url:
-    description: 'The URL for uploading asset to the release (output from create-release action)'
+    description: 'The URL for uploading assets to the release (output from create-release action)'
     required: true
   asset_path:
-    description: 'The path to the asset you want to upload'
+    description: 'The path to the assets you want to upload'
     required: true
   token:
     description: 'The token to use to authenticate with the GitHub API'

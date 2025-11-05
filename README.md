@@ -14,7 +14,7 @@ A GitHub Action to upload assets to an existing release in your repository.
 
 ```yaml
 - name: Upload Release Asset
-  uses: owjs3901/upload-release-asset@v1
+  uses: owjs3901/upload-github-release-asset@main
   with:
     upload_url: ${{ steps.create_release.outputs.upload_url }}
     asset_path: 'dist/*.zip'
@@ -35,7 +35,7 @@ A GitHub Action to upload assets to an existing release in your repository.
 
 ```yaml
 - name: Upload Release Asset
-  uses: owjs3901/upload-release-asset@v1
+  uses: owjs3901/upload-github-release-asset@main
   with:
     upload_url: ${{ steps.create_release.outputs.upload_url }}
     asset_path: 'dist/app.zip'
@@ -46,32 +46,11 @@ A GitHub Action to upload assets to an existing release in your repository.
 
 ```yaml
 - name: Upload Release Assets
-  uses: owjs3901/upload-release-asset@v1
+  uses: owjs3901/upload-github-release-asset@main
   with:
     upload_url: ${{ steps.create_release.outputs.upload_url }}
     asset_path: 'dist/*.{zip,tar.gz}'
     token: ${{ secrets.GITHUB_TOKEN }}
-```
-
-#### Upload with Release Creation
-
-```yaml
-- name: Create Release
-  id: create_release
-  uses: actions/create-release@v1
-  with:
-    tag_name: ${{ github.ref }}
-    release_name: Release ${{ github.ref }}
-    body: |
-      Release notes here
-    draft: false
-    prerelease: false
-
-- name: Upload Release Asset
-  uses: owjs3901/upload-release-asset@v1
-  with:
-    upload_url: ${{ steps.create_release.outputs.upload_url }}
-    asset_path: 'dist/*.zip'
 ```
 
 ## Development
