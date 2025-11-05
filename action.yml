@@ -1,21 +1,20 @@
-name: Github Action Template
-description: Github Action Template
-author: JeongMin Oh
-
-branding:
-  icon: file
-  color: purple
-
+name: Upload a Release Asset
+description: 'Upload a release asset to an existing release in your repository'
+author: 'owjs3901'
 inputs:
-  input:
-    description: The file to read from
+  upload_url:
+    description: 'The URL for uploading assets to the release'
     required: true
-    default: .env.development
-  output:
-    description: The file to overwrite to
+  asset_path:
+    description: 'The path to the asset you want to upload'
     required: true
-    default: .env.production
-
+  token:
+    description: 'The token to use to authenticate with the GitHub API'
+    required: true
+    default: ${{ github.token }}
 runs:
-  using: node24
-  main: ./dist/index.js
+  using: 'node24'
+  main: 'dist/index.js'
+branding:
+  icon: 'package'
+  color: 'gray-dark'
