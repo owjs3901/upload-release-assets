@@ -1,7 +1,7 @@
 {
-	"name": "upload-release-asset",
+	"name": "upload-release-assets",
 	"version": "0.1.0",
-	"description": "Upload a release asset to an existing release in your repository",
+	"description": "Upload release assets to an existing release in your repository",
 	"author": "JeongMin Oh",
 	"license": "Apache-2.0",
 	"scripts": {
