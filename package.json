@@ -1,8 +1,8 @@
 {
-	"name": "upload-github-release-assets",
+	"name": "upload-github-release-asset",
 	"version": "0.1.0",
-	"description": "Upload release assets to an existing release in your repository",
-	"author": "JeongMin Oh",
+	"description": "Upload a release asset to an existing release in your repository",
+	"author": "owjs3901",
 	"license": "Apache-2.0",
 	"scripts": {
 		"build": "bun build --target node src/index.ts --production --outfile=dist/index.js --format=cjs",
